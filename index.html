@@ -49,23 +49,56 @@
   </noscript>
 
   
-    }
-    .menu-toggle span {
-      background: white;
-      height: 3px;
-      margin: 4px 0;
-      width: 25px;
-    }
-    .site-header {
-      background-color: #000;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items:body {
-  margin: 0;
-  background-color: black;
-  color: white;
-  font-family: sans-serif;
+    <style>
+  body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .site-header {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    position: relative;
+  }
+
+  .logo-centered {
+    height: 160px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0084ff;
+    color: white;
+    font-size: 28px;
+    border-radius: 50%;
+    padding: 12px 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: background-color 0.2s ease;
+  }
+
+  .chat-button:hover {
+    background-color: #005bb5;
+  }
+</style>
+
 }
 
 /* სხვა სტილები რჩება უცვლელად... */
@@ -190,6 +223,21 @@
 <header class="site-header">
   <img src="nikoloshop-logo.png" alt="Nikoloshop Logo" class="logo-centered" />
 </header>
+<body>
+
+  <header class="site-header">
+    <img src="nikoloshop-logo.png" alt="Nikoloshop Logo" class="logo-centered" />
+  </header>
+
+  <footer>
+    © 2025 Nikoloshop. ყველა უფლება დაცულია.
+  </footer>
+
+  <a href="https://m.me/nikoloshop" target="_blank" class="chat-button" aria-label="დაგვიკავშირდი Messenger-ზე">
+    💬
+  </a>
+
+</body>
 
 
   <footer>
