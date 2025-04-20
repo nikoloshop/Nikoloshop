@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ka">
 <head>
@@ -49,11 +50,31 @@
       font-family: sans-serif;
       text-align: center;
     }
-    .logo {
-      margin-top: 60px;
+    .site-header {
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      font-size: 18px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    .logo img {
-      width: 120px;
+    .logo {
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .menu a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 300;
+      transition: 0.2s ease;
+    }
+    .menu a:hover {
+      color: orange;
     }
     .intro {
       margin-top: 30px;
@@ -80,21 +101,35 @@
   </style>
 </head>
 <body>
-  <div class="logo">
-    <img src="favicon.png" alt="nikoloshop ლოგო" />
+  <header class="site-header">
+    <div class="logo">Nikoloshop</div>
+    <nav class="menu">
+      <a href="#home">მთავარი</a>
+      <a href="#categories">კატეგორიები</a>
+      <a href="#about">ჩვენს შესახებ</a>
+      <a href="#contact">კონტაქტი</a>
+    </nav>
+  </header>
+
+  <div id="home"></div>
+  <div class="logo" style="margin-top: 60px;">
+    <img src="favicon.png" alt="nikoloshop ლოგო" style="width: 120px;" />
   </div>
 
   <div class="intro">
     ხარისხიანი ტანსაცმელი თანამედროვე სტილით — მხოლოდ მამაკაცებისთვის.
   </div>
 
-  <div class="categories">
+  <div id="categories" class="categories">
     <div class="category">ახალი კოლექცია</div>
     <div class="category">კაცი</div>
     <div class="category">ქალი</div>
     <div class="category">ბრენდი</div>
     <div class="category">ფასდაკლებული</div>
   </div>
+
+  <div id="about"></div>
+  <div id="contact"></div>
 
   <footer>
     © 2025 Nikoloshop. ყველა უფლება დაცულია.
