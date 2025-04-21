@@ -90,8 +90,13 @@
       background: none;
       border: none;
       color: white;
-      font-size: 22px;
+      font-size: 36px;
       cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .hamburger:hover {
+      transform: scale(1.1);
     }
 
     .mobile-menu {
@@ -99,21 +104,45 @@
       flex-direction: column;
       background-color: #fff;
       padding: 15px 20px;
-      position: relative;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      max-height: 50vh;
+      overflow-y: auto;
       z-index: 999;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
-    .mobile-menu a {
+    .menu-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.25;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .menu-links {
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+    }
+
+    .menu-links a {
       color: black;
       text-decoration: none;
-      padding: 12px 0;
-      border-bottom: 1px solid #ccc;
-      font-size: 18px;
+      padding: 15px 0;
+      font-size: 20px;
+      font-weight: bold;
     }
 
-    .mobile-menu a:hover {
+    .menu-links a:hover {
       background-color: #ff7b00;
-      color: white;
+      padding-left: 10px;
     }
 
     .chat-button {
@@ -155,9 +184,14 @@
   </header>
 
   <nav id="mobileMenu" class="mobile-menu">
-    <a href="#">კაცი</a>
-    <a href="#">ქალი</a>
-    <a href="#">ფასდაკლებული</a>
+    <video autoplay muted loop class="menu-video">
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <div class="menu-links">
+      <a href="#">კაცი</a>
+      <a href="#">ქალი</a>
+      <a href="#">ფასდაკლებული</a>
+    </div>
   </nav>
 
   <footer class="site-footer">
