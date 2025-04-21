@@ -114,12 +114,19 @@ body {
   z-index: 999;
   transition: background-color 0.2s ease;
 }
-
-
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
 
 .logo-centered {
-  display: block;
-  max-width: 100px;
+  max-width: 120px;
+  width: 100%;
   height: auto;
-  margin: 20px auto;
 }
+
+
+
+
