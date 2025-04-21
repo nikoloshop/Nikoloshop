@@ -115,12 +115,11 @@ body {
   transition: background-color 0.2s ease;
 }
 
-.logo-centered {
-  height: auto;
-  max-height: 100px;
-  width: auto;
-  max-width: 150px;
-  margin: auto;
-  position: relative;
-}
 
+
+.logo-centered {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  margin: 20px auto;
+}
