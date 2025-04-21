@@ -25,9 +25,11 @@ body {
 }
 
 .logo-centered {
-  height: 80px;  /* აქ შემცირდა ზომა */
+  max-height: 80px;
   width: auto;
-  margin-top: 10px;
+  display: block;
+  margin: 10px auto;
+}
 }
 
 .header-left {
