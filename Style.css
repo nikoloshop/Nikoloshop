@@ -24,17 +24,18 @@ body {
   position: relative;
 }
 
-.logo-centered {
-  max-height: 80px;
-  width: auto;
-  display: block;
-  margin: 10px auto;
-}
+
 }
 
 .header-left {
   position: absolute;
-  left: 15px;
+  lef.logo-centered {
+  height: 120px;
+  width: auto;
+  display: block;
+  margin: 10px auto;
+}
+t: 15px;
   top: 15px;
   display: flex;
   flex-direction: column;
