@@ -2,20 +2,18 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-html {
-  background-color: black;
-}
-
-body {
-  flex: 1;
   margin: 0;
   background-color: black;
   color: white;
   font-family: sans-serif;
 }
 
+.logo-centered {
+  height: 120px;
+  width: auto;
+  display: block;
+  margin: 10px auto;
+}
 
 .site-header {
   background-color: #000;
@@ -29,18 +27,9 @@ body {
   position: relative;
 }
 
-
-}
-
 .header-left {
   position: absolute;
-  lef.logo-centered {
-  height: 120px;
-  width: auto;
-  display: block;
-  margin: 10px auto;
-}
-t: 15px;
+  left: 15px;
   top: 15px;
   display: flex;
   flex-direction: column;
