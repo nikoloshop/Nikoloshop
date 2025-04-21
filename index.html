@@ -75,6 +75,47 @@
       transform: translateX(-50%);
     }
 
+    .header-left {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 1001;
+    }
+
+    .search-icon,
+    .hamburger {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 15px 20px;
+      position: relative;
+      z-index: 999;
+    }
+
+    .mobile-menu a {
+      color: black;
+      text-decoration: none;
+      padding: 12px 0;
+      border-bottom: 1px solid #ccc;
+      font-size: 18px;
+    }
+
+    .mobile-menu a:hover {
+      background-color: #ff7b00;
+      color: white;
+    }
+
     .chat-button {
       position: fixed;
       bottom: 20px;
@@ -106,15 +147,30 @@
 
 <body>
   <header class="site-header">
+    <div class="header-left">
+      <button class="search-icon" aria-label="ძებნა">🔍</button>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="მენიუ">☰</button>
+    </div>
     <img src="nikoloshop-logo.png" alt="Nikoloshop Logo" class="logo-centered" />
   </header>
 
-  <!-- აქ ჩასვა მთავარი შინაარსი მომავალში -->
+  <nav id="mobileMenu" class="mobile-menu">
+    <a href="#">კაცი</a>
+    <a href="#">ქალი</a>
+    <a href="#">ფასდაკლებული</a>
+  </nav>
 
   <footer class="site-footer">
     <p>© 2025 Nikoloshop — ყველა უფლება დაცულია.</p>
   </footer>
 
   <a href="https://m.me/nikoloshop" target="_blank" class="chat-button" aria-label="დაგვიკავშირდი Messenger-ზე">💬</a>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
 </body>
 </html>
