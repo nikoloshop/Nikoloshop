@@ -4,6 +4,10 @@ html, body {
   flex-direction: column;
 }
 
+html {
+  background-color: black;
+}
+
 body {
   flex: 1;
   margin: 0;
@@ -11,6 +15,7 @@ body {
   color: white;
   font-family: sans-serif;
 }
+
 
 .site-header {
   background-color: #000;
